@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 태블릿용 CSS */
+
+/* header 영역 CSS */
+.header{
+    position:static;
+    padding:28px 52px;
+}
+    
+.header .gnb{
+    display:block ;
+    position:static;
+    float:right;
+    width:auto;
+    margin-top:6px;
+    background:none; 
+}
+    
+.header .gnb li{
+    float:left;
+    margin-left:21px;
+    border-bottom:0;
+}
+    
+.header .gnb li a{
+    padding:0;
+    font-size:16px;
+    color:#3f51b5;
+}
+    
+.header .menu-toggle-btn{
+    display:none;
+}
+
+

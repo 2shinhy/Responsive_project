@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* PC용 CSS */
+
+/* 프로모션 영역 CSS */
+.promo-list{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.promotion-section .promo-list li{
+    width:33%;
+    margin: 0 auto;
+}
+
+
+/* 최근 작업 영역 CSS */
+.story-list{
+    margin-top:100px;
+    display:flex;
+    justify-content: space-around;
+}  
+
+.story-section .story-list li{
+    width:25%;
+}    
+
+
+
+/* 최근 글 영역 CSS */
+.writers-section .writers-list{
+    display:flex;
+}
+    
+.writers-section .writers-list li{
+    margin-left:1%;
+    margin-top:0px;
+}    
+    
+
+/* 연락처 영역 CSS */
+.contact-section{
+    margin-top:150px;
+}
+ 
+.contact-section .form-box{
+    margin-left:30%;
+    width:80%;
+}
+    
+.contact-section .form-box .form, .contact-section .form-box .textarea{
+    width:48%;
+}
+
+.contact-section .form-box .form{
+    margin-right:2%;
+}    
+
+.contact-section .form-box .send-btn{
+    text-align:left;
+}

@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+
+/* 공통 CSS  */
+.container{
+    width:90%;
+    max-width:1132px;
+    margin:0 auto;
+}
+
+.cfixed:after, .container:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+    
+.blind{
+    position:absolute;
+    width:0;
+    height:0;
+    line-height:0;
+    text-indent:-9999px; 
+    overflow:hidden; 
+}
+
+.sec-tit{
+    font-size:42px;
+    color:#000000;
+    font-weight:normal;
+}
+
+.divider{
+    width:90%;
+    max-width:1132px;
+    margin:0 auto;
+    margin-top:77px;
+    background:#eaeaea;
+}
+    
+.m-divider{
+    width:20px;
+    margin:0 auto;
+    margin-top:77px;
+    background:#000000;
+}
+
+
+/* 헤더 영역 CSS */
+.header{
+    position:relative;
+    padding:18px 5%;
+}
+    
+.header .logo{
+    float:left;
+}
+    
+.header .logo a{
+    font-size:26px;
+    color:#000000;
+    font-weight:normal;
+}
+    
+.header .gnb{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#000000;
+}
+    
+.header .gnb li{
+    border-bottom:1px solid #aab5c3;
+}
+    
+.header .gnb li a{
+    display:block;
+    padding:14px 0 14px 5%;
+    font-size:14px;
+    color:#fff;
+}
+    
+.header .menu-toggle-btn{
+    float:right;
+    width:20px;
+    margin-top:4px;
+    cursor:pointer;
+} 
+    
+.header .menu-toggle-btn span{
+    display:block;
+    width:100%;
+    height:2px;
+    background:#000000;
+}
+    
+.header .menu-toggle-btn span:nth-child(2){
+    margin:5px 0;
+}
+
+
+/* 슬라이더 영역 CSS */
+.slider img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+    
+    
+/* 디스플레이 영역 CSS */
+.display-section{
+    margin-top:59px;
+    text-align:center;
+}
+
+.display-section .sec-tit{
+    margin-bottom:30px;
+}
+    
+.display-section .desc{
+    font-family:'PT Serif';
+    color:gray;
+    line-height:1.9;
+}
+    
+
+/* 프로모션 영역 CSS */
+.promotion-section{
+    margin-top:68px;
+}
+    
+.promotion-section .promo-list li{
+    margin-top:52px;
+    text-align:center;
+}
+    
+.promotion-section .promo-list li img{
+height:52px;
+}
+    
+.promotion-section .promo-list li h3{
+    margin:29px 0 20px 0;
+    color:#000000;
+    font-weight:normal;
+}
+    
+.promotion-section .promo-list li p{
+    font-size:14px;
+    font-family:'PT Serif';
+    color:gray;
+    line-height:1.5;
+}  
+
+    
+/* STORY 영역 CSS */
+.story-section{
+    margin-top:73px;
+}
+    
+.story-section .sec-tit{
+    width:90%;
+    max-width:1132px;
+    margin:0 auto;
+    margin-bottom:47px;
+    text-align:center;
+}
+    
+.story-section .story-list li{
+    width:100%;
+}
+
+.story-section .story-list li a{
+    display:flex;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+    
+.story-section .story-list li a:before{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    width:100%;
+    height:100%;
+    background:#eaeaea;
+    content:"";
+    opacity:0;
+    transition:all 0.2s;
+}
+    
+.story-section .story-list li a:hover:before{
+    opacity:0.6;
+}
+    
+.story-section .story-list li .info{
+    position:absolute;
+    top:0;
+    left:23px;
+    z-index:20;
+    opacity:0;
+    transition:all 0.3s;
+}
+    
+.story-section .story-list li a:hover .info{
+    transform:translateY(23px);
+    opacity:1;
+}
+    
+.story-section .story-list li .info h3{
+    margin-bottom:8px;
+    font-size:23px;
+    color:gray;
+    font-weight:normal;
+}
+    
+.story-section .story-list li .info span{
+    font-size:11px;
+    color:gray;
+}
+    
+.story-section .story-list li img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+    margin:0 auto;
+    
+}   
+    
+
+/* writers 영역 CSS */
+.writers-section{
+    margin-top:77px;
+}
+    
+.writers-section .sec-tit{
+    margin-bottom:47px;
+    text-align:center;
+}
+    
+.writers-section .writers-list li{
+    width:100%;
+    margin-top:45px;
+    border:1px solid gray;
+}
+    
+.writers-section .writers-list li:first-child{
+    margin-top:0;
+}
+    
+.writers-section .writers-list li img{
+    display:block;
+    width:30%;
+    max-width:30%;
+    margin:50px auto;
+    height:auto;
+}
+    
+.writers-section .writers-list li h3{
+    display:block;
+    margin:20px 0 50px 0;
+    font-size:20px;
+    color:#000000;
+    text-align:center;
+}
+    
+.writers-section .writers-list li p{
+    margin-bottom:50px;
+    color:gray;
+    font-weight:normal;
+    text-align:center;
+}    
+    
+
+/* 연락처 영역 CSS */
+.contact-section{
+    margin-top:109px;
+}
+
+.contact-section .sec-tit{
+    margin-bottom:47px;
+    text-align:center;
+}
+
+.contact-section .form-box .form input{
+    padding-bottom:13px;
+    margin-bottom:38px;
+}
+
+.contact-section .form-box .textarea textarea{
+    height:165px;
+    resize:none;
+}
+
+.contact-section .form-box .send-btn{
+    margin-top:36px;
+    text-align:right;
+}
+
+.contact-section .form-box .send-btn button{
+    padding:15px;
+    margin:0; 
+    border:none;
+    font-size:12px;
+    color:#fff;
+    background:#000000;
+    font-family:'Montserrat';
+    cursor:pointer;
+}
+    
+
+/* footer 영역 CSS */
+.footer{
+    margin-top:104px;
+}
+    
+.footer iframe{
+    width:100%;
+    height:400px;
+}
+    
+.footer p{
+    margin:21px 0;
+    color:#000000;
+    text-align:center;
+}    
+
+
+    
